@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom"
+import logo from '../../assets/logo.png'
 
 const Navbar = () => {
 
@@ -17,7 +18,7 @@ const Navbar = () => {
         {navOptions}
       </ul>
     </div>
-    <Link to='/' className="btn btn-ghost text-xl">Travel Guru</Link>
+    <Link to='/' className="btn btn-ghost text-xl"> <img src={logo} alt="" className="w-10"/> Travel Guru</Link>
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1">
