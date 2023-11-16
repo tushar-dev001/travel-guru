@@ -6,6 +6,7 @@ const Navbar = () => {
     const navOptions = <>
         <li><Link to='/'>Home</Link></li>
         <li><Link to='/destinationDetails'>Destination Details</Link></li>
+        <li><Link to='/booking'>Booking</Link></li>
     </>
   return (
     <div className="navbar bg-base-100">
