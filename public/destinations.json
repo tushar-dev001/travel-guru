@@ -1,0 +1,33 @@
+[
+      {
+        "name": "Cox's Bazar",
+        "description": "Cox's Bazar is a town on the southeast coast of Bangladesh. It is famous for having one of the longest unbroken sandy beaches in the world, which stretches for approximately 120 kilometers. The beach attracts tourists for its serene beauty, soothing waves, and the vibrant culture of the local communities. In addition to the beach, Cox's Bazar offers attractions such as Himchari National Park, Inani Beach, and the fishing port. Visitors can enjoy water sports, explore the nearby hills, and experience the warm hospitality of the local people.",
+        "image": "https://ibb.co/cwzXKYH"
+      },
+      {
+        "name": "Rangamati",
+        "description": "Rangamati is a picturesque district in southeastern Bangladesh, situated amidst the lush green hills of the Chittagong Hill Tracts. The district is known for its stunning landscapes, serene lakes, and diverse indigenous communities. The town of Rangamati, located on the banks of the Kaptai Lake, serves as the headquarters of the district. Popular attractions in Rangamati include Kaptai Lake, Shuvolong Waterfall, Hanging Bridge, and the tribal handicraft market. Visitors can explore the unique culture and traditions of the indigenous people while enjoying the natural beauty of the region.",
+        "image": "https://ibb.co/fGp3b7H"
+      },
+      {
+        "name": "Bandarban",
+        "description": "Bandarban is a district in southeastern Bangladesh, known for its breathtaking landscapes and vibrant indigenous cultures. Nestled in the Chittagong Hill Tracts, Bandarban is a paradise for nature lovers and adventure enthusiasts. The district is home to numerous hills, waterfalls, and tribal villages. Popular attractions in Bandarban include Nilgiri Hills, Nafakhum Waterfall, Boga Lake, and the Buddha Dhatu Jadi. Visitors can engage in trekking, hiking, and cultural exploration while enjoying the scenic beauty of this hilly region.",
+        "image": "https://ibb.co/ySDk1Ww"
+      },
+      {
+        "name": "Sylhet",
+        "description": "Sylhet is a city in eastern Bangladesh, surrounded by picturesque tea gardens, rolling hills, and lush green landscapes. The region is known for its natural beauty, historical sites, and vibrant cultural heritage. Sylhet is famous for its tea estates, with gardens like Ratargul and Lalakhal offering stunning views. The city is also home to religious landmarks such as Hazrat Shah Jalal University of Science and Technology, Hazrat Shah Jalal's shrine, and Ratargul Swamp Forest. Visitors to Sylhet can experience the unique blend of natural wonders and cultural richness.",
+        "image": "https://ibb.co/D5p8ZvK"
+      },
+      {
+        "name": "Rajshahi",
+        "description": "Rajshahi is a city in western Bangladesh, known for its historical and cultural significance. The region boasts a rich heritage, with archaeological sites, ancient monuments, and educational institutions. The city is situated on the banks of the Padma River and is often referred to as the 'Silk City' due to its thriving silk industry. Key attractions in Rajshahi include the Varendra Research Museum, Puthia Temple Complex, and the Padma River. Visitors can explore the historical treasures and vibrant traditions of Rajshahi while enjoying the hospitality of its residents.",
+        "image": "https://ibb.co/PrbM0hT"
+      },
+      {
+        "name": "Chittagong",
+        "description": "Chittagong, officially known as Chattogram, is a major coastal seaport city in southeastern Bangladesh. It is the second-largest city in the country and plays a crucial role in trade and commerce. Chittagong is surrounded by hills and the Bay of Bengal, offering a diverse landscape. The city is known for its busy port, vibrant markets, and historical sites such as Foy's Lake, Patenga Beach, and Chandranath Temple. Visitors can experience the dynamic energy of Chittagong, explore its cultural landmarks, and enjoy the coastal charm of this bustling city.",
+        "image": "https://ibb.co/Sc03QK0"
+      }
+    ]
+  

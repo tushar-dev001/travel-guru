@@ -1,4 +1,4 @@
-import { FaFlag, FaLocationArrow } from "react-icons/fa6";
+
 import "./Banner.css";
 
 const Banner = () => {
