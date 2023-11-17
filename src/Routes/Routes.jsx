@@ -20,7 +20,7 @@ export const router = createBrowserRouter([
         element: <Home></Home>,
         loader: () =>
           fetch(
-            "https://travel-web-app-server-bqbrtekmu-tushari789.vercel.app"
+            "https://travel-web-app-server-pzx3kjjxt-tushari789.vercel.app"
           ),
       },
       {
@@ -28,7 +28,7 @@ export const router = createBrowserRouter([
         element: <DestinationDetails></DestinationDetails>,
         loader: () =>
           fetch(
-            "https://travel-web-app-server-bqbrtekmu-tushari789.vercel.app"
+            "https://travel-web-app-server-pzx3kjjxt-tushari789.vercel.app"
           ),
       },
       {
@@ -36,7 +36,7 @@ export const router = createBrowserRouter([
         element: <PlacesDetails />,
         loader: ({ params }) =>
           fetch(
-            `https://travel-web-app-server-bqbrtekmu-tushari789.vercel.app/${params.placeId}`
+            `https://travel-web-app-server-pzx3kjjxt-tushari789.vercel.app/${params.placeId}`
           ),
       },
       {
@@ -48,7 +48,7 @@ export const router = createBrowserRouter([
         ),
         loader: () =>
           fetch(
-            "https://travel-web-app-server-bqbrtekmu-tushari789.vercel.app/bookings"
+            "https://travel-web-app-server-pzx3kjjxt-tushari789.vercel.app/bookings"
           ),
       },
       {
