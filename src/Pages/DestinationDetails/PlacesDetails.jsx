@@ -12,7 +12,9 @@ const PlacesDetails = () => {
   useEffect(() => {
     const fetchPlaceDetails = async () => {
       try {
-        const response = await fetch(`http://localhost:5000/places/${placeId}`);
+        const response = await fetch(
+          `https://travel-web-app-server-bqbrtekmu-tushari789.vercel.app/${placeId}`
+        );
         const data = await response.json();
         console.log(data);
         setPlaceDetails(data);
