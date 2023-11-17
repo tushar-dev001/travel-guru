@@ -46,7 +46,10 @@ export const router = createBrowserRouter([
             <Booking></Booking>
           </PrivateRoute>
         ),
-        loader: () => fetch("http://localhost:5000/bookings"),
+        loader: () =>
+          fetch(
+            "https://travel-web-app-server-bqbrtekmu-tushari789.vercel.app/bookings"
+          ),
       },
       {
         path: "/login",

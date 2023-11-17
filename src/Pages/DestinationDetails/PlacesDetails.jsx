@@ -38,22 +38,27 @@ const PlacesDetails = () => {
     const date = from.date.value;
     const bookingData = { name, email, date };
 
-    axios.post("http://localhost:5000/bookings", bookingData).then((res) => {
-      console.log(res.data);
-      if (res.data.insertedId) {
-        Swal.fire({
-          position: "top-end",
-          icon: "success",
-          title: "Your Booking Successfully",
-          showConfirmButton: false,
-          timer: 1500,
-        });
-      }
-      from.reset();
-      setTimeout(() => {
-        navigate("/destinationDetails");
-      }, 2000);
-    });
+    axios
+      .post(
+        "https://travel-web-app-server-bqbrtekmu-tushari789.vercel.app/bookings",
+        bookingData
+      )
+      .then((res) => {
+        console.log(res.data);
+        if (res.data.insertedId) {
+          Swal.fire({
+            position: "top-end",
+            icon: "success",
+            title: "Your Booking Successfully",
+            showConfirmButton: false,
+            timer: 1500,
+          });
+        }
+        from.reset();
+        setTimeout(() => {
+          navigate("/destinationDetails");
+        }, 2000);
+      });
   };
 
   return (
