@@ -18,12 +18,12 @@ export const router = createBrowserRouter([
       {
         path: "/",
         element: <Home></Home>,
-        loader: () => fetch("https://travel-web-app-server.vercel.app"),
+        loader: () => fetch("https://travel-web-app-server.vercel.app/places"),
       },
       {
         path: "/destinationDetails",
         element: <DestinationDetails></DestinationDetails>,
-        loader: () => fetch("https://travel-web-app-server.vercel.app"),
+        loader: () => fetch("https://travel-web-app-server.vercel.app/places"),
       },
       {
         path: "/placesDetails/:placeId",
