@@ -6,6 +6,7 @@ const Booking = () => {
   const bookingsInfo = useLoaderData();
   console.log(bookingsInfo);
   return (
+    
     <div className="my-20">
         <div className="overflow-x-auto">
         <table className="table">

@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import axios from "axios";
 import Swal from "sweetalert2";
 
@@ -7,6 +7,7 @@ const PlacesDetails = () => {
   const { placeId } = useParams();
   console.log(placeId);
   const [placeDetails, setPlaceDetails] = useState(null);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const fetchPlaceDetails = async () => {
@@ -27,29 +28,31 @@ const PlacesDetails = () => {
     return <div>Loading...</div>;
   }
 
-  const handleSubmitDate =(e)=>{
-    e.preventDefault()
+  const handleSubmitDate = (e) => {
+    e.preventDefault();
     const from = e.target;
-    const name= from.name.value;
+    const name = from.name.value;
     const email = from.email.value;
     const date = from.date.value;
-    const bookingData ={name, email, date};
+    const bookingData = { name, email, date };
 
-    axios.post('http://localhost:5000/bookings', bookingData)
-    .then(res =>{
-        console.log(res.data);
-        if(res.data.insertedId){
-            Swal.fire({
-                position: "top-end",
-                icon: "success",
-                title: "Your Booking Successfully",
-                showConfirmButton: false,
-                timer: 1500
-              });
-        }
-        from.reset()
-    })
-  }
+    axios.post("http://localhost:5000/bookings", bookingData).then((res) => {
+      console.log(res.data);
+      if (res.data.insertedId) {
+        Swal.fire({
+          position: "top-end",
+          icon: "success",
+          title: "Your Booking Successfully",
+          showConfirmButton: false,
+          timer: 1500,
+        });
+      }
+      from.reset();
+      setTimeout(() => {
+        navigate("/destinationDetails");
+      }, 2000);
+    });
+  };
 
   return (
     <div className="mt-20">
@@ -82,7 +85,11 @@ const PlacesDetails = () => {
                 className="p-2 px-8 rounded-lg mt-2"
               />
             </div>
-            <input type="submit" value="Booking" className="btn btn-warning mt-4"/>
+            <input
+              type="submit"
+              value="Booking"
+              className="btn btn-warning mt-4"
+            />
           </form>
         </div>
       </div>
