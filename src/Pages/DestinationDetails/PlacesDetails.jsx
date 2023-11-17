@@ -13,7 +13,7 @@ const PlacesDetails = () => {
     const fetchPlaceDetails = async () => {
       try {
         const response = await fetch(
-          `https://travel-web-app-server-pzx3kjjxt-tushari789.vercel.app/${placeId}`
+          `https://travel-web-app-server.vercel.app/${placeId}`
         );
         const data = await response.json();
         console.log(data);
@@ -39,10 +39,7 @@ const PlacesDetails = () => {
     const bookingData = { name, email, date };
 
     axios
-      .post(
-        "https://travel-web-app-server-pzx3kjjxt-tushari789.vercel.app/bookings",
-        bookingData
-      )
+      .post("https://travel-web-app-server.vercel.app/bookings", bookingData)
       .then((res) => {
         console.log(res.data);
         if (res.data.insertedId) {
