@@ -100,11 +100,6 @@ const Login = () => {
                   </span>
                 </p>
               </div>
-              <div className="my-4 text-center">
-                <button className="btn btn-outline btn-circle btn-warning">
-                  G
-                </button>
-              </div>
             </form>
           </div>
         </div>
