@@ -69,7 +69,7 @@ const Navbar = () => {
       <div className="navbar-end">
         {user ? (
           <>
-            <h3 className="mx-4 font-bold text-xl">{user.displayName}</h3>
+            <h3 className="mx-4 font-bold text-xl hidden md:block">{user.displayName}</h3>
             <button
               onClick={handleLogOut}
               className="btn btn-warning font-bold"

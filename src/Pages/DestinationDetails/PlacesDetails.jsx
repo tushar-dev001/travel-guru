@@ -13,7 +13,7 @@ const PlacesDetails = () => {
     const fetchPlaceDetails = async () => {
       try {
         const response = await fetch(
-          `https://travel-web-app-server.vercel.app/${placeId}`
+          `https://travel-web-app-server.vercel.app/places/${placeId}`
         );
         const data = await response.json();
         console.log(data);
@@ -60,17 +60,17 @@ const PlacesDetails = () => {
 
   return (
     <div className="mt-20">
-      <h2 className="text-5xl font-bold ml-10 my-10 bg-slate-500 p-2 rounded-lg text-white">
+      <h2 className="text-5xl font-bold ml-2 md:ml-10 my-4 md:my-10 bg-slate-500 p-2 rounded-lg text-white">
         {placeDetails.name}
       </h2>
-      <div className="w-[900px] mx-auto">
+      <div className="md:w-[900px] mx-auto">
         <img src={placeDetails.img} alt="No Image Found" />
       </div>
-      <div className="flex justify-center mt-10">
-        <div className="w-3/4 ">
+      <div className="flex flex-col md:flex-row items-center md:items-start justify-center mt-10">
+        <div className="md:w-3/4 ">
           <p className="text-lg  px-10">{placeDetails.description}</p>
         </div>
-        <div className="">
+        <div className="mt-5 md:mt-0">
           <form onSubmit={handleSubmitDate}>
             <div>
               <h3 className="text-2xl font-bold">Name</h3>

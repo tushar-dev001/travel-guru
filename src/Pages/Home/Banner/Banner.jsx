@@ -23,12 +23,13 @@ const Banner = () => {
 
   return (
     <div>
-      <div className="hero min-h-[800px] banner-img">
+      <div className="hero md:min-h-[800px] banner-img">
         <div className="hero-overlay bg-opacity-50"></div>
-        <div className="  w-48" style={{ width: '700px' }}>
+        <div className=" lg:w-[700px]" >
+          {/* style={{ width: '700px' }} */}
           <form
             onSubmit={handleSearch}
-            className="md:bg-white md:p-6 items-center rounded-lg"
+            className="md:bg-white md:p-6 items-center rounded-lg mx-20 md:mx-0"
           >
             <h3 className="text-3xl my-2 text-white md:text-slate-800">
               Destination

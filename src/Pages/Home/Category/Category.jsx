@@ -9,7 +9,7 @@ const Category = () => {
   return (
     <div>
         <SectionTitle heading={"Pick A Tour Type"} subHeading={"Browse By Category"}></SectionTitle>
-        <div className="flex gap-5 text-center justify-evenly">
+        <div className="flex flex-col md:flex-row items-center gap-10 md:gap-5 text-center justify-evenly ">
             <CategoryCart img={city} name={"City Tours"} title={"10 Tours+"} ></CategoryCart>
             <CategoryCart img={boad} name={"Boat Tours"} title={"10 Tours+"} ></CategoryCart>
             <CategoryCart img={food} name={"Beach"} title={"10 Tours+"} ></CategoryCart>

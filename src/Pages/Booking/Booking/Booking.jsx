@@ -28,8 +28,10 @@ const Booking = () => {
             <td>{booking.name}</td>
             <td>{booking.email}</td>
             <td>{booking.date}</td>
+            <div className="flex flex-row items-center">
             <button className="btn btn-outline btn-sm btn-square mx-4"><MdDelete /></button>
             <button className="btn btn-outline btn-sm btn-square"><AiFillEdit /></button>
+            </div>
           </tr>)
       }
 

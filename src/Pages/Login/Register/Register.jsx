@@ -100,7 +100,7 @@ const Register = () => {
                   <span className="label-text">Password</span>
                 </label>
                 <input
-                  type="text"
+                  type="password"
                   {...register("password", {
                     required: true,
                     maxLength: 20,
